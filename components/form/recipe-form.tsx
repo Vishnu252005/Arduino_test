@@ -49,7 +49,7 @@ export function RecipeForm({ onSubmit, isLoading }: RecipeFormProps) {
               <FormControl>
                 <div className="relative">
                   <Input
-                    placeholder="Breadboard, Arduino Board, Jumper Wires"
+                    placeholder=" Breadboard, Arduino Board, Jumper Wires "
                     {...field}
                     onClick={() => setShowAdditionalFields(true)}
                     className="rounded-xl bg-primary text-secondary shadow-lg placeholder:text-secondary/70"
