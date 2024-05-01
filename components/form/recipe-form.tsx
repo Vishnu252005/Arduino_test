@@ -85,19 +85,19 @@ export function RecipeForm({ onSubmit, isLoading }: RecipeFormProps) {
               />
               <SelectFormField form={form} name="difficulty" />
             </FormItem>
-            {/* <FormItem>
+            <FormItem>
               <RecipeFormLabel
                 stepIndex="5"
                 labelIndex="Any specific preferences for your feast?"
               />
-              <SwitchFormField
+              {/* <SwitchFormField
                 form={form}
                 name="low_calori"
                 label="⚖️ Low Cal"
               />
               <SwitchFormField form={form} name="vegan" label="🌿 Vegan" />
-              <SwitchFormField form={form} name="paleo" label="🍖 Paleo" />
-            </FormItem> */}
+              <SwitchFormField form={form} name="paleo" label="🍖 Paleo" /> */}
+            </FormItem>
           </>
         )}
         {isLoading ? (
