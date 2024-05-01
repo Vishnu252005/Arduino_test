@@ -17,7 +17,7 @@ export default async function IndexPage() {
         <PageHeaderHeading>
         Say hello to boundless projects with 
           <span className="bg-gradient-to-r from-violet-500 to-teal-300 bg-clip-text text-transparent">
-            {" Mom Recipe"}
+            {" ComponentChef"}
           </span>
         </PageHeaderHeading>
         <PageHeaderDescription>
