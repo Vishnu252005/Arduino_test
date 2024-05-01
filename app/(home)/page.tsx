@@ -15,7 +15,7 @@ export default async function IndexPage() {
       <PageHeader>
         <RecipesCounter />
         <PageHeaderHeading>
-          Say goodbye to mealtime indecision with
+        Say hello to boundless projects with 
           <span className="bg-gradient-to-r from-violet-500 to-teal-300 bg-clip-text text-transparent">
             {" Mom Recipe"}
           </span>
