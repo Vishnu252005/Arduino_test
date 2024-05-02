@@ -36,8 +36,8 @@ export interface RecipeTable {
   //   fats: number
   //   carbs: number
   // }
-  // ingredients2: Array<{ name: string; amount: number | string }>
-  // instructions: Array<{ step: number; description: string | string }>
+  ingredients2: Array<{ name: string; amount: number | string }>
+  instructions: Array<{ step: number; description: string | string }>
   // vegan: string
   // low_calories: string
   // paleo: string
@@ -62,19 +62,19 @@ export const columns: ColumnDef<RecipeTable>[] = [
   //     <DataTableColumnHeader column={column} title="Cooking Time" />
   //   ),
   // },
-  {
-    accessorKey: "status",
-    header: "Status",
-    // cell: ({ row }) => {
-    //   const { vegan, paleo } = row.original
+  // {
+  //   accessorKey: "status",
+  //   header: "Status",
+  //   // cell: ({ row }) => {
+  //   //   const { vegan, paleo } = row.original
 
-    //   if (vegan === "Yes") {
-    //     return <Badge variant="vegan">Vegan</Badge>
-    //   } else if (paleo === "Yes") {
-    //     return <Badge variant="paleo">Paleo</Badge>
-    //   }
-    // },
-  },
+  //   //   if (vegan === "Yes") {
+  //   //     return <Badge variant="vegan">Vegan</Badge>
+  //   //   } else if (paleo === "Yes") {
+  //   //     return <Badge variant="paleo">Paleo</Badge>
+  //   //   }
+  //   // },
+  // },
   {
     id: "actions",
     cell: ({ row }) => {

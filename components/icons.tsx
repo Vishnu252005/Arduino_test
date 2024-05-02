@@ -38,7 +38,7 @@ export const Icons = {
   save: Heart,
   loader: Loader2,
   // cooking_time: Timer,
-  // people: Users,
+  people: Users,
   difficulty: Star,
   logo: Soup,
   input: CornerDownLeft,

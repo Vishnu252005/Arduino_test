@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/card"
 // import { macroInfo, recipeInfo } from "@/components/recipe/recipe-constants"
 import { SaveRecipeButton } from "@/components/recipe/save-recipe-button"
+import { recipeInfo } from "./recipe-constants"
 
 interface GeneratedRecipeContentProps {
   recipe: Recipe
