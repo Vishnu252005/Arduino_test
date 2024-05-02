@@ -2,8 +2,7 @@ import {
   BatteryFull,
   BatteryLow,
   BatteryMedium,
-  Beef,
-  Vegan,
+  
 } from "lucide-react"
 
 export const difficulties = [

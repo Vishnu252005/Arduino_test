@@ -5,7 +5,7 @@ import { X } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { difficulties, statuses } from "@/components/dashboard/data"
+import { difficulties} from "@/components/dashboard/data"
 import { DataTableFacetedFilter } from "@/components/dashboard/data-table-faceted-filter"
 import { DataTableViewOptions } from "@/components/dashboard/data-table-view-options"
 
@@ -36,13 +36,13 @@ export function DataTableToolbar<TData>({
             options={difficulties}
           />
         )}
-        {table.getColumn("status") && (
+        {/* {table.getColumn("status") && (
           <DataTableFacetedFilter
             column={table.getColumn("status")}
             title="Status"
             options={statuses}
           />
-        )}
+        )} */}
 
         {isFiltered && (
           <Button
