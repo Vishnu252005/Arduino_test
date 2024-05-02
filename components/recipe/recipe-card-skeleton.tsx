@@ -36,7 +36,7 @@ export function RecipeCardSkeleton() {
               </div>
             ))}
           </div>
-          {/* Macros BarChart Section */}
+          {/* Macros BarChart Section
           <div className="grid grid-cols-1 gap-4 transition-all md:gap-0">
             <h3 className="text-lg font-semibold">Macros</h3>
             <div className="grid grid-cols-3 items-end gap-4 transition-all">
@@ -44,7 +44,7 @@ export function RecipeCardSkeleton() {
               <Skeleton className="h-20 w-1/3" />
               <Skeleton className="h-8 w-1/3" />
             </div>
-          </div>
+          </div> */}
         </div>
         {/* Ingredients Section */}
         <div className="space-y-2">

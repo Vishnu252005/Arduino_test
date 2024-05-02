@@ -13,7 +13,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { macroInfo, recipeInfo } from "@/components/recipe/recipe-constants"
+// import { macroInfo, recipeInfo } from "@/components/recipe/recipe-constants"
 import { SaveRecipeButton } from "@/components/recipe/save-recipe-button"
 
 interface GeneratedRecipeContentProps {
@@ -21,10 +21,10 @@ interface GeneratedRecipeContentProps {
 }
 
 export function RecipeCard({ recipe }: GeneratedRecipeContentProps) {
-  const macroChartData = macroInfo.map((macro) => ({
-    label: macro.label,
-    value: recipe?.macros[macro.value],
-  }))
+  // const macroChartData = macroInfo.map((macro) => ({
+  //   label: macro.label,
+  //   value: recipe?.macros[macro.value],
+  // }))
 
   const onSaveRecipe = async () => {
     toast.promise(saveRecipe(recipe), {
@@ -56,7 +56,7 @@ export function RecipeCard({ recipe }: GeneratedRecipeContentProps) {
               </div>
             ))}
           </div>
-          {/* Macros BarChart Section */}
+          {/* Macros BarChart Section
           <div className="grid grid-cols-1 gap-4 transition-all md:gap-0">
             <h3 className="text-lg font-semibold">Macros</h3>
             <ResponsiveContainer width="100%" height={75}>
@@ -84,7 +84,7 @@ export function RecipeCard({ recipe }: GeneratedRecipeContentProps) {
                 />
               </BarChart>
             </ResponsiveContainer>
-          </div>
+          </div> */}
         </div>
         {/* Ingredients Section */}
         <div className="space-y-2">

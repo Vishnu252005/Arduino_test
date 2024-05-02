@@ -23,9 +23,9 @@ export function RecipeCardPreview({
   recipe,
   isPrivate = false,
 }: RecipeCardProps) {
-  const isVegan = recipe?.vegan === "Yes"
-  const isPaleo = recipe?.paleo === "Yes"
-  const cookingTime = recipe?.cooking_time?.replaceAll(/[^0-9]/g, "")
+  // const isVegan = recipe?.vegan === "Yes"
+  // const isPaleo = recipe?.paleo === "Yes"
+  // const cookingTime = recipe?.cooking_time?.replaceAll(/[^0-9]/g, "")
   const href = isPrivate
     ? `/dashboard/my-recipes/${recipe.id}`
     : `/recipes/${recipe.id}`
@@ -46,9 +46,9 @@ export function RecipeCardPreview({
         <CardContent>
           <div className="flex space-x-2">
             <Badge>{recipe?.difficulty}</Badge>
-            <Badge variant="secondary">🕓 {cookingTime} min</Badge>
+            {/* <Badge variant="secondary">🕓 {cookingTime} min</Badge>
             {isVegan && <Badge variant="vegan">Vegan</Badge>}
-            {isPaleo && <Badge variant="paleo">Paleo</Badge>}
+            {isPaleo && <Badge variant="paleo">Paleo</Badge>} */}
           </div>
         </CardContent>
       </Card>

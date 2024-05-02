@@ -24,15 +24,15 @@ export const difficulties = [
   },
 ]
 
-export const statuses = [
-  {
-    label: "Vegan",
-    value: "vegan",
-    icon: Vegan,
-  },
-  {
-    label: "Paleo",
-    value: "paleo",
-    icon: Beef,
-  },
-]
+// export const statuses = [
+//   {
+//     label: "Vegan",
+//     value: "vegan",
+//     icon: Vegan,
+//   },
+//   {
+//     label: "Paleo",
+//     value: "paleo",
+//     icon: Beef,
+//   },
+// ]

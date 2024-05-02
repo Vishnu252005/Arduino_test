@@ -2,41 +2,28 @@ import { FormData } from "@/types/types"
 
 export function generatePrompt(values: FormData): string {
   const dietRestrictions = `
-    - Low-calorie: ${values.low_calori ? "Yes" : "No"}
-    - Vegan: ${values.vegan ? "Yes" : "No"}
-    - Paleo: ${values.paleo ? "Yes" : "No"}
+    
   `
   return `
-    You are an expert culinary chef who has cooked for the best restaurants in the world.
-    Craft a delightful, creative and unique recipe with the following considerations:
+  You are a skilled inventor with a passion for tinkering with electronics and coding.
+  Design an innovative and captivating Arduino project with the following considerations:
 
     Rules:
-      - Response must be in JSON format.
-      - Recipe must have a creative Title.
-      - Include detailed instructions with estimated cooking times for each step.
-      - Adhere to the following dietary preferences: ${dietRestrictions}
-      - Utilize only the available ingredients (${values.ingredients}).
-        Avoid incompatible ingredients based on the specified diet.
-      - Ensure the cooking time is under ${values.cooking_time} minutes.
-      - Design the recipe to serve ${values.people} people.
-      - Evaluate the difficulty of execution as ${values.difficulty}.
-      - Recipe must have a short description.
-      - Be creative with the cooking techniques and flavor combinations
-      - Feel free to incorporate herbs and spices for an extra burst of flavor
+      - Response must include a detailed project description.
+      - Idea must have a creative and catchy title.
+      - Include a list of required components, such as  (${values.ingredients}).
+      - Provide step-by-step instructions for building the project.
+      - Design the project to serve a specific purpose or solve a problem.
+      - Evaluate the difficulty of implementation as ${values.difficulty}.
+      - Be creative with the functionality and features of the project.
+      - Feel free to incorporate sensors, actuators, and other hardware components for added functionality.
 
 
     The JSON object must include the following fields:
     - "title": [string]
     - "description": [string]
-    - "people": [number] (based on the provided input)
     - "difficulty": [string] (based on the provided input)
-    - "cooking_time": [number] (based on the provided input)
-    - "low_calori": [string] (based on the provided input)
-    - "vegan": [string] (based on the provided input)
-    - "paleo": [string] (based on the provided input)
-    - "calories": [number],
-    - "macros": {"protein": [number], "fats": [number], "carbs": [number]},
-    - "ingredients": [{"name": [string], "amount": [string]}, ...] (based on the provided diet type and ingredients provided),
+    - "ingredients": [{"name": [string], "amount": [string]}, ...] (based on the provided  type and components provided),
     - "instructions": [{"step": [number], "description": [string]}, ...]
 
     
@@ -45,14 +32,7 @@ export function generatePrompt(values: FormData): string {
     {
       "title": /* details */,
       "description":  /* details */,
-      "people":  /* details */,
       "difficulty":  /* details */,
-      "cooking_time":  /* details */,
-      "low_calori":  /* details */,
-      "vegan":  /* details */, 
-      "paleo":  /* details */,
-      "calories":  /* details */,
-      "macros": { /* details */ },
       "ingredients": { /* details */ },
       "instructions": { /* details */ }
     }
