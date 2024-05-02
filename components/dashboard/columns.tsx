@@ -20,7 +20,7 @@ import { DataTableColumnHeader } from "@/components/dashboard/data-table-column-
 const handleDeleteRecipe = async (id: string) => {
   toast.promise(deleteRecipe(id), {
     loading: "Deleting...",
-    success: () => "Recipe deleted successfully.",
+    success: () => "Idea deleted successfully.",
   })
 }
 
