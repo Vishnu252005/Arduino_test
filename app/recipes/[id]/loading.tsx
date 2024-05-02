@@ -11,7 +11,7 @@ export default function RecipeLoading() {
       <PageHeader>
         <PageHeaderHeading>Your Recipe in the Making!</PageHeaderHeading>
         <PageHeaderDescription>
-          Simmering up a digital feast! Your recipe is currently undergoing a
+          Simmering up a digital feast! Your idea is currently undergoing a
           gourmet transformation!✨
         </PageHeaderDescription>
       </PageHeader>

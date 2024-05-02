@@ -14,9 +14,9 @@ export default function RecipeNotFound() {
       <PageHeader>
         <PageHeaderHeading>Oops!</PageHeaderHeading>
         <PageHeaderDescription>
-          It seems our chef got a bit too creative and lost the recipe!
-          We&apos;re on a quest to find it. Meanwhile, let&apos;s share a
-          virtual cookie and try another delicious adventure!✨
+        Looks like our tech guru misplaced the blueprint for our latest Arduino invention! 
+        While we search for it, let's enjoy a virtual byte-sized cookie and embark on another 
+        electrifying adventure in the world of Arduino! ⚡✨
         </PageHeaderDescription>
         <PageActions>
           <Link href="/">

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://moms-recipe.app"),
   title: "Your Culinary Creations",
   description:
-    "Explore your saved recipes in one place. Your culinary journey starts here!",
+    "Explore your saved ideas in one place. Your  journey starts here!",
 }
 
 async function getRecipesPrivate(): Promise<RecipeTable[] | null> {

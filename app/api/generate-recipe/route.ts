@@ -22,7 +22,7 @@ export async function POST(req: Request) {
     n: 1,
     messages: [
       { role: "user", content: prompt },
-      { role: "system", content: "You are an expert culinary chef" },
+      { role: "system", content: "You are an expert in arduino project ideas" },
     ],
     response_format: { type: "json_object" },
   })
