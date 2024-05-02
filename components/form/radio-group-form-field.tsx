@@ -21,8 +21,6 @@ interface RadioGroupFormFieldProps {
   options: RadioGroupOption[]
 }
 
-
-
 export function RadioGroupFormField({
   form,
   name,
@@ -39,7 +37,6 @@ export function RadioGroupFormField({
               onValueChange={field.onChange}
               defaultValue={field.value}
               className="grid grid-cols-3"
-              aria-label="people-recipe"
             >
               {options.map((option) => (
                 <FormItem key={option.value}>
