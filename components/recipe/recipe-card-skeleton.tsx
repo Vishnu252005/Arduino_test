@@ -16,10 +16,10 @@ export function RecipeCardSkeleton() {
     <Card className="w-full animate-pulse">
       <CardHeader>
         <CardTitle className="text-xl font-bold">
-          Your Recipe in the Making!
+          Your Idea in the progress!
         </CardTitle>
         <CardDescription>
-          Get ready for a pixel-perfect culinary experience! ✨
+          Get ready for a pixel-perfect  experience! ✨
         </CardDescription>
       </CardHeader>
       <CardContent className="space-y-4 text-sm text-muted-foreground">

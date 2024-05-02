@@ -73,7 +73,7 @@ export function RecipeForm({ onSubmit, isLoading }: RecipeFormProps) {
             <FormItem>
               <RecipeFormLabel
                 stepIndex="4"
-                labelIndex="Are you the master of the kitchen domain?"
+                labelIndex="Are you the master of the electronics domain?"
               />
               <SelectFormField form={form} name="difficulty" />
             </FormItem>

@@ -9,7 +9,7 @@ export default function RecipeLoading() {
   return (
     <div className="container grid animate-pulse">
       <PageHeader>
-        <PageHeaderHeading>Your Recipe in the Making!</PageHeaderHeading>
+        <PageHeaderHeading>Your Idea in the progress!</PageHeaderHeading>
         <PageHeaderDescription>
           Simmering up a digital feast! Your idea is currently undergoing a
           gourmet transformation!✨
